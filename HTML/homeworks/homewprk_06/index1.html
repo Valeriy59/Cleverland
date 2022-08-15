@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Регистрационная форма пользователя</legend>
+            <p>
+                <label>Имя:<input type="text"></label>
+            </p>
+            <p>
+                Укажите возраст:<input list="age" type="text">
+            </p>
+            <datalist id="age">
+                <option>10-15 лет</option>
+                <option>15-20 лет</option>
+                <option>20-30 лет</option>
+                <option>30-40 лет</option>
+                <option>Старше 40 лет</option>
+            </datalist>
+            <p>
+                Укажите пол:
+                <input type="radio" name="gender" value="M">Мужской
+                <input type="radio" name="gender" value="F">Женский
+            </p>
+            <p>
+                Страна проживания:
+                <select name="country" id="country">
+                    <option>Беларусь</option>
+                    <option>Российская Федерация</option>
+                    <option>Другое государство</option>
+                </select>
+            </p>
+            <p>
+                Владение языками:
+                <input type="checkbox" name="rus" value="rus">русский
+                <input type="checkbox" name="blr" value="blr">белорусский
+                <input type="checkbox" name="eng" value="eng">английский
+            </p>
+            <p>
+                Фото профиля:
+                <input type="file" value="Обзор">
+            </p>
+            <p>
+                Введите логин:
+                <input type="text" required>
+            </p>
+            <p>
+                Введите пароль:
+                <input type="password" name="password" id="pwd" required>
+            </p>
+            <p>
+                Повторите пароль:
+                <input type="password" name="password" id="pwd" required>
+            </p>
+        </fieldset>
+        <p>
+            <input type="reset" value="Сброс">
+            <input type="submit" value="Отправить">
+        </p>
+    </form>
+</body>
+</html>
