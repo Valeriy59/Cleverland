@@ -47,3 +47,39 @@ h3:nth-of-type(even) a {
 h3:nth-of-type(odd) a {
   color: #1ead10;
 }
+
+a::before {
+  content: '\1F517';
+  font-size: 30px; /*размер текста*/
+  color: #08c2b2; /*цвет текста*/
+  margin: 5px;   /*Внешние отступы*/
+}
+
+a[href^="#"]::before {
+  content: '\1F516';
+  font-size: 30px; /*размер текста*/
+  color: #ffa500; /*цвет текста*/
+  margin: 5px; /*Внешние отступы*/
+}
+p:nth-of-type(n+3)::first-line, p:first-of-type::first-line {
+  font-style: italic; /*курсив*/
+  font-weight: bold; /*полужирный*/
+  font-size: larger; 
+}
+
+h2::after {
+  content: '\1F50D';
+  font-size: 35px; /*размер текста*/
+  margin-left: 15px;  
+}
+h2::first-letter {
+  font-size: larger; /* шрифт крупнее чем шрифт родительского  элемента */
+  margin-left: 30px; /*Внешние отступы*/
+}
+p:nth-of-type(2)::before {
+  content: '\26A0';
+  font-style: normal;
+  margin: 10px;
+  color: #ffa500;
+  font-size: 34px;
+}
